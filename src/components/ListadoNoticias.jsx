@@ -16,7 +16,7 @@ function ListadoNoticias({noticias}) {
 }
 
 ListadoNoticias.propTypes = {
-    noticias: PropTypes.object.isRequired
+    noticias: PropTypes.array.isRequired
 }
 
 export default ListadoNoticias

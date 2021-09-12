@@ -5,12 +5,11 @@ function Noticia({noticia}) {
     // extraer los datos
     const { urlToImage, url, title, description, source } = noticia
 
-    const imagen = urlToImage ? 
-        <div className="card-image">
+    const imagen = urlToImage ? (<div className="card-image">
             <img src={urlToImage} alt={title} />
             <span className="card-title">{source.name}</span>
-        </div>
-    : null
+        </div>)
+            : null
 
     return (
         <div className="col s12 m6 l4">
